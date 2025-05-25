@@ -1,10 +1,19 @@
 import React from "react";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import ProblemSidebar from "@/components/features/problems/ProblemSidebar";
 
 export default function ProblemsSidebarLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <SidebarProvider></SidebarProvider>;
+  return (
+    <SidebarProvider>
+      <ProblemSidebar />
+      <main>
+        <SidebarTrigger />
+        {children}
+      </main>
+    </SidebarProvider>
+  );
 }
