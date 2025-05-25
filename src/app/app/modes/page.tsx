@@ -9,7 +9,7 @@ import {
 import Link from "next/link";
 import React from "react";
 
-export default function page() {
+export default function ModesPage() {
   return (
     <div className="flex justify-around w-full h-full m-4">
       <Card className="h-full w-2/5">
@@ -24,7 +24,7 @@ export default function page() {
         </CardContent>
         <CardFooter>
           <Button className="w-full">
-            <Link href="/app/modes/problems">Go to Problems</Link>
+            <Link href="/app/problems">Go to Problems</Link>
           </Button>
         </CardFooter>
       </Card>
@@ -40,7 +40,7 @@ export default function page() {
         </CardContent>
         <CardFooter>
           <Button className="w-full">
-            <Link href="/app/modes/learn">Start Learning</Link>
+            <Link href="/app/learn">Start Learning</Link>
           </Button>
         </CardFooter>
       </Card>

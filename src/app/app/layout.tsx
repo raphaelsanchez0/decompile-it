@@ -15,7 +15,7 @@ export default function AppLayout({
 }>) {
   return (
     <div>
-      <NavigationMenu className="p-4">
+      <NavigationMenu className="p-2">
         <NavigationMenuList>
           <NavigationMenuItem>
             <div className="p-4 text-xl font-bold">AsmLab</div>
