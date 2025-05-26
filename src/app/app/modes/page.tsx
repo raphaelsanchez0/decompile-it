@@ -24,7 +24,7 @@ export default function ModesPage() {
         </CardContent>
         <CardFooter>
           <Button className="w-full">
-            <Link href="/app/problems">Go to Problems</Link>
+            <Link href="/app/problems/fundamentals/info">Go to Problems</Link>
           </Button>
         </CardFooter>
       </Card>

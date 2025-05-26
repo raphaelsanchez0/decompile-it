@@ -16,24 +16,24 @@ import Link from "next/link";
 const items = [
   {
     title: "Info",
-    url: "/app/problems/info",
+    url: "/app/problems/fundamentals/info",
     icon: Info,
   },
   {
     title: "Problem 1",
-    url: "/app/problems/problem-1",
+    url: "/app/problems/fundamentals/problem-1",
   },
   {
     title: "Problem 2",
-    url: "/app/problems/problem-2",
+    url: "/app/problems/fundamentals/problem-2",
   },
   {
     title: "Problem 3",
-    url: "/app/problems/problem-3",
+    url: "/app/problems/fundamentals/problem-3",
   },
   {
     title: "Problem 4",
-    url: "/app/problems/problem-4",
+    url: "/app/problems/fundamentals/problem-4",
   },
   {
     title: "Problem 5",
@@ -63,6 +63,21 @@ export default function ProblemSidebar() {
                 </SidebarMenuButton>
               </SidebarMenuItem>
             ))}
+          </SidebarMenu>
+        </SidebarGroupContent>
+      </SidebarGroup>
+      <SidebarGroup>
+        <SidebarGroupLabel>AI Generated Problems</SidebarGroupLabel>
+        <SidebarGroupContent>
+          <SidebarMenu>
+            <SidebarMenuItem>
+              <SidebarMenuButton asChild>
+                <Link href="/app/problems/ai-generated/info">
+                  <Info />
+                  <span>Info</span>
+                </Link>
+              </SidebarMenuButton>
+            </SidebarMenuItem>
           </SidebarMenu>
         </SidebarGroupContent>
       </SidebarGroup>
