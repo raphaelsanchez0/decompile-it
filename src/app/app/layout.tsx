@@ -14,7 +14,7 @@ export default function AppLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-col h-screen">
+    <div>
       <NavigationMenu className="p-2">
         <NavigationMenuList>
           <NavigationMenuItem>
