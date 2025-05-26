@@ -24,7 +24,7 @@ export default function AppLayout({
           <NavigationMenuItem>
             <NavigationMenuLink
               className={navigationMenuTriggerStyle()}
-              href="/app/problems"
+              href="/app/problems/info"
             >
               Problems
             </NavigationMenuLink>
