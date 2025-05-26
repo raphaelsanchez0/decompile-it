@@ -8,10 +8,11 @@ import React from "react";
 
 export default function ProblemSidebar() {
   return (
-    <Sidebar>
+    // <Sidebar variant="inset" >
+    <Sidebar side="left" className="sticky" collapsible="none">
       <SidebarContent />
       <SidebarGroup>
-        <SidebarGroupLabel>Fundamental Problems</SidebarGroupLabel>
+        <SidebarGroupLabel>Fundamental</SidebarGroupLabel>
       </SidebarGroup>
     </Sidebar>
   );

@@ -1,5 +1,9 @@
 import React from "react";
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import {
+  SidebarInset,
+  SidebarProvider,
+  SidebarTrigger,
+} from "@/components/ui/sidebar";
 import ProblemSidebar from "@/components/features/problems/ProblemSidebar";
 
 export default function ProblemsSidebarLayout({
@@ -11,9 +15,10 @@ export default function ProblemsSidebarLayout({
     <SidebarProvider>
       <ProblemSidebar />
       <main>
-        <SidebarTrigger />
+        {/* <SidebarTrigger /> */}
         {children}
       </main>
+      {/* </SidebarInset> */}
     </SidebarProvider>
   );
 }
