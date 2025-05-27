@@ -14,7 +14,7 @@ export default function ProblemsSidebarLayout({
   return (
     <SidebarProvider>
       <ProblemSidebar />
-      <main>
+      <main className="w-full">
         {/* <SidebarTrigger /> */}
         {children}
       </main>
