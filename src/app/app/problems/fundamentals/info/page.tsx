@@ -1,6 +1,7 @@
+import Link from "next/link";
 import React from "react";
 
-export default function InfoPage() {
+export default function FundamentalProblemsInfoPage() {
   return (
     <div className="py-6 lg:px-8">
       <h1 className="text-3xl font-bold tracking-tight mb-4">
@@ -29,12 +30,17 @@ export default function InfoPage() {
         me.
       </p>
       <p className="text-base mb-4">
-        If you are looking for more challenged, consider trying out AI generated
-        examples section. It will generate a random C code snippet and ask you
-        to write the assembly code for it. This is a great way to practice your
-        skills and see how well you understand the concepts. This is especially
-        useful if you have exhausted the fundamental problems and want to feel
-        more confident in your assembly skills.
+        If you are looking for more challenges, consider trying out the{" "}
+        <Link href="/app/problems/ai-generated/info">
+          <strong className="font-bold text-black hover:underline">
+            AI generated examples features
+          </strong>
+        </Link>
+        . It will generate a random C code snippet and ask you to write the
+        assembly code for it. This is a great way to practice your skills and
+        see how well you understand the concepts. This is especially useful if
+        you have exhausted the fundamental problems and want to feel more
+        confident in your assembly skills.
       </p>
     </div>
   );
