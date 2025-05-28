@@ -44,10 +44,10 @@ const items = [
 export default function ProblemSidebar() {
   return (
     <Sidebar side="left" className="sticky h-9/10" collapsible="none">
-      <SidebarContent />
+      <SidebarContent className="flex-none" />
       <SidebarGroup>
         <SidebarGroupLabel>Fundamental Problems</SidebarGroupLabel>
-        <SidebarGroupContent>
+        <SidebarGroupContent className="">
           <SidebarMenu>
             {items.map((item) => (
               <SidebarMenuItem key={item.title}>
