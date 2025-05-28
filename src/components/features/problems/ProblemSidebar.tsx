@@ -43,7 +43,7 @@ const items = [
 
 export default function ProblemSidebar() {
   return (
-    <Sidebar side="left" className="sticky" collapsible="none">
+    <Sidebar side="left" className="sticky h-9/10" collapsible="none">
       <SidebarContent />
       <SidebarGroup>
         <SidebarGroupLabel>Fundamental Problems</SidebarGroupLabel>

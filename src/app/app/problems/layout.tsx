@@ -12,7 +12,7 @@ export default function ProblemsSidebarLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <SidebarProvider>
+    <SidebarProvider className="h-15/16">
       <ProblemSidebar />
       <main className="w-full">
         {/* <SidebarTrigger /> */}

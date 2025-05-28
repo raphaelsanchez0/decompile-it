@@ -14,8 +14,8 @@ export default function AppLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div>
-      <NavigationMenu className="p-2">
+    <div className="h-screen">
+      <NavigationMenu className="p-2 h-1/16">
         <NavigationMenuList>
           <NavigationMenuItem>
             <div className="p-4 text-xl font-bold">AsmLab</div>
